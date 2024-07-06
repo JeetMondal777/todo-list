@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(10, 10, 60);
+}
+
+#main{
+    height: 80%;
+    width: 70%;
+    background-color: rgb(9, 9, 43);
+    border-radius: 20px;
+    border: 3px solid antiquewhite;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+#main::-webkit-scrollbar{
+    display: none;
+}
+
+#main h1{
+    color: #fff;
+    margin: 20px;
+    font-size: 50px;
+    font-weight: 1000;
+}
+
+#main #todo-input {
+    width: 60%;
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#main #add-btn {
+    background-color: #4CAF50;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    height:50px ;
+    width: 15%;
+}
+
+#main #add-btn:hover {
+    background-color: #3e8e41;
+}
+#main p{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px;
+    
+}
+#main #text {
+    margin-top: 5px;
+    padding: 0;
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    display: grid;
+    align-items: left;
+    justify-content: left;
+    margin-left: 50px;
+
+}
+
+#main #text ul {
+
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 100px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+#main #text ul:last-child {
+    border-bottom: none;
+}
+
+#main #text #inputText{
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+#main #text #trash {
+    cursor: pointer;
+
+}
+

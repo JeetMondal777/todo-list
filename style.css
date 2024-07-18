@@ -37,12 +37,21 @@ html,body {
 }
 
 #main #todo-input {
-    width: 60%;
+    width: 50%;
     height: 50px;
     padding: 10px;
     font-size: 18px;
     border: 1px solid #ccc;
     border-radius: 10px;
+}
+
+#main #timeInput{
+    height: 50px;
+    width: 15%;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    padding: 0 10px;
 }
 
 #main #add-btn {
@@ -96,6 +105,12 @@ html,body {
 }
 
 #main #text #inputText{
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+#main #text #declaredTime{
     margin-right: 10px;
     cursor: pointer;
 

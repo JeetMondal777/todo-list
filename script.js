@@ -9,8 +9,8 @@ addBtn.addEventListener('click', function(){
         alert("Please Enter A Task With Time");
     }else{
     let newElem = document.createElement("ul");
-    newElem.innerHTML = `<div id="inputText">${todoInput.value}</div>
-    <div id="declaredTime"> at ${time.value}</div>
+    newElem.innerHTML = `<div id="inputText">${todoInput.value}</div> at 
+    <div id="declaredTime">${time.value}</div>
     <div id="trash"><i class="ri-delete-bin-6-fill"></i></div>`;
     text.appendChild(newElem)
     
@@ -59,10 +59,11 @@ addBtn.addEventListener('click', function(){
     Notification.requestPermission().then(perm => {
         if(perm === "granted"){
             new Notification(` at ${time.value} ${todoInput.value} pending`)
+            todoInput.value = "";
         }
     })
     
-    todoInput.value = "";
+
     }})
 
 

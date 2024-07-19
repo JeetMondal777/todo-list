@@ -112,6 +112,7 @@ html,body {
 
 #main #text #declaredTime{
     margin-right: 10px;
+    margin-left: 10px;
     cursor: pointer;
 
 }

@@ -53,6 +53,14 @@ html,body {
     border-radius: 10px;
     padding: 0 10px;
 }
+#main #dateInput{
+    height: 50px;
+    width: 15%;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    padding: 0 10px;
+}
 
 #main #add-btn {
     background-color: #4CAF50;
@@ -86,7 +94,7 @@ html,body {
     align-items: left;
     justify-content: left;
     margin-left: 50px;
-
+    
 }
 
 #main #text ul {
@@ -111,8 +119,14 @@ html,body {
 }
 
 #main #text #declaredTime{
-    margin-right: 10px;
     margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+#main #text #declaredDate{
+    margin-left: 10px;
+    margin-right: 10px;
     cursor: pointer;
 
 }
